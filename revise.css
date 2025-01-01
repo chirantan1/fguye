@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #001f3f;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("backgroundImage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header Styles */
+header h1 {
+    font-size: 3rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Main Section Styles */
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    color: #ffcc00;
+    text-align: center;
+}
+
+.main-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.sub-text {
+    font-size: 1.5rem;
+    color: #00ff7f;
+    text-shadow: 1px 1px 5px #000;
+    margin: 10px 0;
+}
+
+/* Animated Circles */
+.year-circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 10px;
+    position: absolute;
+    background: linear-gradient(135deg, #ff4500, #ffcc00);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    animation: pulse 1s infinite alternate;
+}
+
+/* Specific Circle Positions */
+#box1 {
+    top: 20px;
+    left: 50px;
+    position: absolute;
+}
+
+#box2 {
+    top: 20px;
+    right: 50px;
+    position: absolute;
+}
+
+/* Animations */
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    to {
+        transform: scale(1.2);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+    }
+}
